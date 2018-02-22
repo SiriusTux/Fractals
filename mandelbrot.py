@@ -37,7 +37,7 @@ if __name__ == '__main__':
 	plane = initialyzeplane(n)
 	fig = mandelbrot(plane)
 	plt.imshow(	fig, extent=(-2.5,1.0,-1.0,1.0),
-				cmap=cm.nipy_spectral_r, interpolation='nearest')
+				cmap=cm.Greys_r, interpolation='nearest')
 	plt.colorbar()
 	plt.show()
 
