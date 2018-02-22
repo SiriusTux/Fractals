@@ -36,8 +36,9 @@ if __name__ == '__main__':
 	n = 400
 	plane = initialyzeplane(n)
 	fig = mandelbrot(plane)
-	plt.imshow(	fig, extent=(-2.5,1.0,-1.0,1.0),
-				cmap=cm.Greys_r, interpolation='nearest')
+	plt.imshow(fig, extent=(-2.5,1.0,-1.0,1.0),
+			cmap=cm.Greys_r, interpolation='nearest')
+	plt.title('Mandelbrot Set')
 	plt.colorbar()
 	plt.show()
 
