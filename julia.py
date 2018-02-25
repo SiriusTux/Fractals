@@ -32,10 +32,15 @@ def julia(plane, c):
 
 if __name__ == '__main__':
 	n = 1000
-	#c = complex(-0.8, 0.156)
-	#c = complex(0.285, 0.01)
-	c = complex(-0.4, 0.6)
-	#c = complex(-0.621, 0)
+	print('Draw Julia Set iterating f(z) = z^2 + c')
+	print('Good values for c are:')
+	print('1) c = -0.8 + 0.156i')
+	print('2) c = 0.285 + 0.01i')
+	print('3) c = -0.4 + 0.6i')
+	print('4) c = -0.621')
+	real = float(input('Enter real part of c: '))
+	imag = float(input('Enter imaginary part of c: '))
+	c = complex(real, imag)
 	plane = initialyzeplane(n)
 	fig = julia(plane, c)
 	plt.imshow(fig, extent=(-2.,2.,-2.,2.),

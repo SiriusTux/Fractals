@@ -61,7 +61,7 @@ def chaos(vertices, iteration, fun):
 		next_x, next_y = dist(start_x, start_y, next_vertex_x, next_vertex_y)
 		x.append(next_x)
 		y.append(next_y)
-		start_x, start_y = next_x, next_y
+		start_x, start_y = next_x, next_y 
 		previous_previous_vertex = previous_vertex
 		previous_vertex = next_vertex
 		i += 1
