@@ -31,13 +31,17 @@ def julia(plane, c):
 	return image
 
 if __name__ == '__main__':
-	n = 1000
+	n = 500
 	print('Draw Julia Set iterating f(z) = z^2 + c')
 	print('Good values for c are:')
 	print('1) c = -0.8 + 0.156i')
 	print('2) c = 0.285 + 0.01i')
 	print('3) c = -0.4 + 0.6i')
-	print('4) c = -0.621')
+	print('4) c = -0.390541 -0.586788i (Siegel Disk Fractal)')
+	print('5) c = -0.123 + 0.745i (Douady\'s Rabbit Fractal)')
+	print('6) c = -0.75 (San Marco Fractal)')
+	print('7) c = -0.8i')
+	print('8) c = i (Dendrite Fractal)')
 	real = float(input('Enter real part of c: '))
 	imag = float(input('Enter imaginary part of c: '))
 	c = complex(real, imag)
