@@ -30,8 +30,15 @@ def julia(plane, c):
 			image[i][k] = iteration
 	return image
 
+def title():
+	print('\n')
+	print('*************')
+	print('* JULIA SET *')
+	print('*************')
+
 if __name__ == '__main__':
 	n = 500
+	title()
 	print('Draw Julia Set iterating f(z) = z^2 + c')
 	print('Good values for c are:')
 	print('1) c = -0.8 + 0.156i')
