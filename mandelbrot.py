@@ -3,7 +3,7 @@
 import matplotlib.pyplot as plt
 import numpy as np
 import matplotlib.cm as cm
-from color import initialyzeimage
+from utilities import timer, initialyzeimage
 
 def initialyzeplane(n):
 	ans = []
@@ -16,6 +16,7 @@ def initialyzeplane(n):
 		ans.append(row)
 	return ans
 
+@timer
 def mandelbrot(plane):
 	max_iteration = 1000
 	image = initialyzeimage(len(plane), len(plane))
@@ -30,7 +31,6 @@ def mandelbrot(plane):
 				iteration += 1
 			image[i][k] = iteration
 	return image
-
 
 if __name__ == '__main__':
 	n = 400

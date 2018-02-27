@@ -3,15 +3,7 @@
 import matplotlib.pyplot as plt
 import matplotlib.cm as cm
 import random
-
-def initialyzeimage(x_p, y_p):
-	image = []
-	for j in range(y_p):
-		x_colors = []
-		for i in range(x_p):
-			x_colors.append(0)
-		image.append(x_colors)
-	return image
+from utilities import initialyzeimage
 
 def color_points():
 	x_p = 50

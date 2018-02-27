@@ -3,7 +3,7 @@
 import matplotlib.pyplot as plt
 import numpy as np
 import matplotlib.cm as cm
-from color import initialyzeimage
+from utilities import timer, initialyzeimage
 
 def initialyzeplane(n):
 	ans = []
@@ -16,6 +16,7 @@ def initialyzeplane(n):
 		ans.append(row)
 	return ans
 
+@timer
 def julia(plane, c):
 	max_iteration = 1000
 	image = initialyzeimage(len(plane), len(plane))
@@ -37,7 +38,7 @@ def title():
 	print('*************')
 
 if __name__ == '__main__':
-	n = 500
+	n = 1000
 	title()
 	print('Draw Julia Set iterating f(z) = z^2 + c')
 	print('Good values for c are:')
