@@ -3,7 +3,7 @@
 import matplotlib.pyplot as plt
 import numpy as np
 import matplotlib.cm as cm
-from utilities import timer, initialyzeimage
+from decorator import timer
 
 def initialyzeplane(n):
 	ans = []
@@ -19,7 +19,7 @@ def initialyzeplane(n):
 @timer
 def mandelbrot(plane):
 	max_iteration = 1000
-	image = initialyzeimage(len(plane), len(plane))
+	image = np.zeros((len(plane), len(plane)))
 	for i in range(len(plane)):
 		for k in range(len(plane[i])):
 			x, y = plane[i][k]

@@ -2,6 +2,7 @@
 # -*- coding: utf-8 -*-
 import random
 import matplotlib.pyplot as plt
+from utilities import timer
 
 def transformation1(point):
 	x, y = point
@@ -40,7 +41,8 @@ def transform(point):
 	x, y = t(point)
 	return x,y
 
-def draw_sierpinsky1(n):
+@timer
+def draw_sierpinsky(n):
 	x = [0]
 	y = [0]
 	x1, y1 = 0, 0
@@ -53,7 +55,7 @@ def draw_sierpinsky1(n):
 
 if __name__ == '__main__':
 	n = int(input('Enter the number of points in the Sierpinsky Triangle: '))
-	x, y = draw_sierpinsky1(n)
+	x, y = draw_sierpinsky(n)
 	# Plot points
 	plt.plot(x, y, 'o', markersize=0.5)
 	plt.title('Sierpinsky Triangle with {} points'.format(n))
