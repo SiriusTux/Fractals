@@ -4,6 +4,7 @@ import matplotlib.pyplot as plt
 import numpy as np
 import matplotlib.cm as cm
 from decorator import timer
+import os
 
 def initialyzeplane(n):
 	ans = []
@@ -32,6 +33,10 @@ def julia(plane, c):
 	return image
 
 def title():
+	if os.name == 'posix':
+		os.system('clear')
+	else:
+		os.system('cls')
 	print('\n')
 	print('*************')
 	print('* JULIA SET *')
