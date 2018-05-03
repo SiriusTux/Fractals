@@ -36,6 +36,7 @@ def title():
 	print('*************')
 	print('* JULIA SET *')
 	print('*************')
+	print('\n')
 
 if __name__ == '__main__':
 	n = 1000
@@ -50,6 +51,7 @@ if __name__ == '__main__':
 	print('6) c = -0.75 (San Marco Fractal)')
 	print('7) c = -0.8i')
 	print('8) c = i (Dendrite Fractal)')
+	print('\n')
 	real = float(input('Enter real part of c: '))
 	imag = float(input('Enter imaginary part of c: '))
 	c = complex(real, imag)

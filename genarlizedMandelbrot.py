@@ -27,7 +27,7 @@ def mandelbrot(plane, power):
 			c = complex(x, y)
 			iteration = 0
 			while abs(z) < 2 and iteration < max_iteration:
-				z = pow(z,power) + c
+				z = pow(z, power) + c
 				iteration += 1
 			image[i][k] = iteration
 	return image

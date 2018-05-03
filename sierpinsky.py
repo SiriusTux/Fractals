@@ -2,7 +2,7 @@
 # -*- coding: utf-8 -*-
 import random
 import matplotlib.pyplot as plt
-from utilities import timer
+from decorator import timer
 
 def transformation1(point):
 	x, y = point
